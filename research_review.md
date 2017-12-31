@@ -15,6 +15,7 @@ Graphplan builds on STRIPS and introduces the paradigm of Planning Graph Analysi
 Graphplan is an important contribution predominantly due to the novel representation of planning with graphs. As the authors point out many heuristics can be applied on top of Graphlab to accomplish more efficient searching. It also provides a means for converting planning into a max flow problem that has many fast algorithms. A downside of Graphlab is that it's limited to STRIPS-like domains meaning that objects cannot be added and consequences of actions cannot change over time.
 
 3- [HSP](https://bonetblai.github.io/reports/aips98-competition.pdf)
+
 Heuristic Search Planner (HSP) works on STRIPS-encoded problems. Employing heuristics allows us to find efficient solutions to an otherwise inefficient search. Finding the optimal cost even in a relaxed problem is still NP-hard. However HSP uses an iterative algorithm to find an approximation. Once this approximation is found we use A* or greedy (i.e. hill climbing) search.
 
 In an empirical study the authors show that HSP is able to solve more problems compared to the alternatives but it's generally slower and does not provide any optimality guaranteed. However the solutions found were very closes to the shortest plans. 
