@@ -19,3 +19,8 @@ Graphplan is an important contribution predominantly due to the novel representa
 Heuristic Search Planner (HSP) works on STRIPS-encoded problems. Employing heuristics allows us to find efficient solutions to an otherwise inefficient search. Finding the optimal cost even in a relaxed problem is still NP-hard. However HSP uses an iterative algorithm to find an approximation. Once this approximation is found we use A* or greedy (i.e. hill climbing) search.
 
 In an empirical study the authors show that HSP is able to solve more problems compared to the alternatives but it's generally slower and does not provide any optimality guaranteed. However the solutions found were very closes to the shortest plans. 
+
+### References
+* STRIPS: A New Approach to the Application of Theorem Proving to Problem Solving, Fikes et al, http://ai.stanford.edu/~nilsson/OnlinePubs-Nils/PublishedPapers/strips.pdf
+* Fast Planning Through Planning Graph Analysis, Blum et al, https://www.cs.cmu.edu/~avrim/Papers/graphplan.pdf
+* HSP: Heuristic Search Planner, Bonet et al, https://bonetblai.github.io/reports/aips98-competition.pdf
