@@ -1,6 +1,46 @@
 # Planning Heuristic Analysis
 
-The results are compared based on time complexity, space complexity, and optimality. Clock time is used as a proxy for time complexity and space omplexity is measured by the number of explored and evaluated nodes. 
+The results are compared based on time complexity, space complexity, and optimality. Clock time is used as a proxy for time complexity and space omplexity is measured by the number of explored and evaluated nodes.
+ 
+### Optimal plans
+Problem 1
+```
+Load(C1, P1, SFO)
+Fly(P1, SFO, JFK)
+Unload(C1, P1, JFK)
+Load(C2, P2, JFK)
+Fly(P2, JFK, SFO)
+Unload(C2, P2, SFO
+```
+
+Problem 2
+```
+Load(C1, P1, SFO)
+Load(C2, P2, JFK)
+Load(C3, P3, ATL)
+Fly(P2, JFK, SFO)
+Unload(C2, P2, SFO)
+Fly(P1, SFO, JFK)
+Unload(C1, P1, JFK)
+Fly(P3, ATL, SFO)
+Unload(C3, P3, SFO)
+```
+
+Problem 3
+```
+Load(C1, P1, SFO)
+Fly(P1, SFO, ATL)
+Load(C3, P1, ATL)
+Fly(P1, ATL, JFK)
+Unload(C1, P1, JFK)
+Unload(C3, P1, JFK)
+Load(C2, P2, JFK)
+Fly(P2, JFK, ORD)
+Load(C4, P2, ORD)
+Fly(P2, ORD, SFO)
+Unload(C2, P2, SFO)
+Unload(C4, P2, SFO)
+```
 
 ### No heuristics
 Problem | Algorithm | Expansion | Goals | New Nodes | Time | Optimal
